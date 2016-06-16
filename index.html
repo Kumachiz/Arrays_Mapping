@@ -11,43 +11,24 @@
     <div class = "container">
       <h1>Welcome!</h1>
       <h4>Please make a grocery list below</h4>
-      <br></br>
-      <form id="grocery-list">
-        <div id="question1">
-          <p>Please insert your grocery list alphabetically.</p>
-          <div class="text">
-            <label>
-              <input type="text" name="Meat" value="">
-              Meat
-            </label>
-            <br></br>
-          </div> <!-- closes Meat -->
-          <div class="text">
-            <label>
-              <input type="text" name="Fruit" value="">
-              Fruit
-            </label>
-            <br></br>
-          </div> <!-- closes Friut -->
-          <div class="text">
-            <label>
-              <input type="text" name="Vegetables" value="">
-              Vegetables
-            </label>
-          </div> <!-- closes Vegetables -->
-        </div>
+      <div>
+      <form id="grocerylist">
+        <label for="meat">Meat</label>
+        <input id="meat" type="text">
+        <label for="fruit">Fruit</label>
+        <input id="fruit" type="text">
+        <label for="vegetable">Vegetable</label>
+        <input id="vegetable" type="text">
+        </input>
+        <button type="submit">Submit</submit>
+      </form> <!-- end favoriteThings form -->
+    </div>
 
+    <div>
+      <ul id="output">
+      </ul>
+    </div>
 
-        </div>
-
-        <br></br>
-        <button type="submit" class="btn">Show my Groceries</button>
-
-      </form>
-
-      <div id="list_text">
-        <p>Your grocery list:<span class="list"></p>
-      </div>
 
     </div> <!-- closes the container -->
   </body>
